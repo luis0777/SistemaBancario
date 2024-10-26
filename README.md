@@ -5,6 +5,7 @@
 #### Classe ContaBancaria
 Esta classe representa uma conta bancária. Possui as seguintes propriedades e métodos:
 
+
 Propriedades:
 
 Numero: Armazena o número da conta.
@@ -17,11 +18,13 @@ Titular: Armazena o nome do titular da conta.
 
 Saldo: Armazena o saldo atual da conta.
 
+
 Construtores:
 
 O construtor principal inicializa as propriedades com os valores fornecidos.
 
 Um segundo construtor permite inicializar a conta com um depósito inicial.
+
 
 Métodos:
 Deposito(double quantia): Adiciona a quantia informada ao saldo.
@@ -33,12 +36,14 @@ ToString(): Retorna uma representação string da conta, incluindo o número, o 
 #### 2. Classe CriarConta
 Esta classe é responsável por criar uma nova conta bancária.
 
+
 Método:
 
 CriandoConta(): Realiza a coleta de dados do titular, gera um número e dígito da conta aleatórios, solicita a criação de uma senha e retorna uma nova instância de ContaBancaria. O método inclui validações para garantir que o nome do titular e a senha sejam válidos.
 
 #### 3. Classe DadosAtualizados
 Esta classe exibe os dados da conta bancária.
+
 
 Construtor:
 
@@ -51,9 +56,11 @@ DadosDaConta(): Exibe as informações da conta usando a representação string 
 #### 4. Classe Deposito
 Esta classe lida com operações de depósito.
 
+
 Construtor:
 
 Recebe uma instância de ContaBancaria.
+
 
 Método:
 
@@ -62,9 +69,11 @@ Depositar(): Solicita a quantia a ser depositada, valida o valor e chama o méto
 #### 5. Classe EscolhaDaOperação
 Esta classe permite ao usuário escolher uma operação para realizar na conta bancária.
 
+
 Construtor:
 
 Recebe uma instância de ContaBancaria.
+
 
 Método:
 
@@ -73,6 +82,7 @@ TipoDeOperação(): Exibe um menu de operações (dados da conta, depósito, saq
 #### 6. Classe LoginConta
 Esta classe lida com o processo de login do usuário na conta bancária.
 
+
 Método:
 
 LogadoNaConta(ContaBancaria conta): Solicita ao usuário o número da conta, dígito e senha, validando essas informações. Se o login for bem-sucedido, chama a classe EscolhaDaOperação para que o usuário possa realizar operações na conta.
@@ -80,9 +90,11 @@ LogadoNaConta(ContaBancaria conta): Solicita ao usuário o número da conta, dí
 #### 7. Classe Saque
 Esta classe lida com operações de saque.
 
+
 Construtor:
 
 Recebe uma instância de ContaBancaria.
+
 
 Método:
 
@@ -91,11 +103,13 @@ Sacar(): Solicita a quantia a ser sacada, valida o valor, e verifica se há sald
 #### 8. Classe TelaInicial
 Esta classe apresenta o menu inicial do aplicativo.
 
+
 Método:
 Inicio(): Exibe um menu para criar uma nova conta, entrar em uma conta existente ou sair do programa. Dependendo da escolha do usuário, chama as classes CriarConta ou LoginConta para gerenciar a conta.
 
 #### 9. Classe Program
 Esta é a classe principal que inicia o aplicativo.
+
 
 Método:
 
