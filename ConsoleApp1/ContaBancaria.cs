@@ -1,7 +1,7 @@
 ﻿
 namespace ConsoleApp1
 {
-    class ContaBancaria
+    public class ContaBancaria
     {
         public int Numero { get; private set; }
         public int Digito {  get; private set; }
@@ -17,9 +17,9 @@ namespace ConsoleApp1
             Titular = titular;
         }
 
-        public ContaBancaria(int numero, int digito, int senha, string titular, double depositoInicial) : this (numero , digito, senha, titular) 
+        public ContaBancaria(int numero, int digito, int senha, string titular, double deposito) : this (numero , digito, senha, titular) 
         {
-            Deposito(depositoInicial);
+            Deposito(deposito);
         }
 
         public void Deposito(double quantia)
@@ -34,7 +34,7 @@ namespace ConsoleApp1
 
         public override string ToString()
         {
-            return $"Conta {Numero}-{Digito}, Titular: {Titular}, Saldo: R$ {Saldo.ToString("F2")} ";
+            return $"Conta {Numero}-{Digito}\nTitular: {Titular}\nSaldo: R$ {Saldo.ToString("F2")} ";
         }
 
 
