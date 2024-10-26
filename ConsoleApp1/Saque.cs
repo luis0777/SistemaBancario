@@ -6,7 +6,6 @@ namespace ConsoleApp1
     {
         private ContaBancaria conta;
 
-        // Construtor que recebe uma instância de ContaBancaria
         public Saque(ContaBancaria conta)
         {
             this.conta = conta;
@@ -20,14 +19,13 @@ namespace ConsoleApp1
             Console.Write("Digite a quantia que deseja sacar: ");
 
             double quantia;
-            // Loop para garantir que uma quantia válida seja inserida
+
             while (!double.TryParse(Console.ReadLine(), out quantia) || quantia <= 0)
             {
                 Console.WriteLine("Valor inválido, tente novamente...");
                 Console.Write("Digite a quantia que deseja sacar: ");
             }
 
-            // Verifica se o saldo é suficiente
             if (conta.Saldo >= quantia)
             {
                 conta.Saque(quantia);

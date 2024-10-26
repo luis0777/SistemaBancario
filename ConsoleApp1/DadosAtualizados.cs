@@ -9,12 +9,12 @@ namespace ConsoleApp1
     public class DadosAtualizados
     {
         private ContaBancaria conta;
-
         // Construtor que recebe uma instância de ContaBancaria
         public DadosAtualizados(ContaBancaria conta)
         {
             this.conta = conta;
         }
+
         public void DadosDaConta()
         {
             Console.WriteLine("CONTA BANCÁRIA");

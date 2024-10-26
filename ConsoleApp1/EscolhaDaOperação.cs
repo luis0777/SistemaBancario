@@ -5,8 +5,6 @@ namespace ConsoleApp1
     public class EscolhaDaOperação
     {
         private ContaBancaria conta;
-
-        // Construtor que recebe uma instância de ContaBancaria
         public EscolhaDaOperação(ContaBancaria conta)
         {
             this.conta = conta;
@@ -16,7 +14,6 @@ namespace ConsoleApp1
         {
             int tipoDeOperacao = 0;
 
-            // Mantém o usuário no menu de operações até escolher sair
             do
             {
                 Console.Clear();
